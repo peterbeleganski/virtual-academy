@@ -1,0 +1,12 @@
+<div class="main">
+  <h2 class="text-center">Всички курсове</h2>
+  <div class="card" *ngFor="let course of courses">
+    <div class="card-body">
+      <h3><p>{{course.title}}</p> </h3>
+      <p>Описание: {{course.description}}</p>
+      <p>Рейтинг: {{course.rating}}</p>
+      <button class="btn btn-sm btn-info" (click)="addToFavourites(course)">Добави в любими</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+<div class="wrapper fadeInDown">
+  <h2>Login</h2>
+  <div id="formContent">
+    <form>
+      <input type="text" id="login" class="fadeIn second" [(ngModel)]="user.email" name="login" placeholder="Имейл">
+      <input type="text" id="password" class="fadeIn third" [(ngModel)]="user.password" name="login" placeholder="Парола">
+      <input type="submit" class="fadeIn fourth" (click)="login()" value="Log In">
+      <p *ngIf="error">
+        <span class="text-danger">{{error}}</span>
+      </p>
+    </form>
+    <div id="formFooter">
+      <a class="underlineHover" routerLink="/register">Регистрация</a>
+    </div>
+  </div>
+</div>
