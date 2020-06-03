@@ -9,6 +9,7 @@
     </div>
     <div class="card-footer" *ngIf="isAdmin()" >
       <button class="btn btn-sm btn-danger" (click)="deleteCourse(course.id)">Изтрий</button>
+      <a class="btn btn-sm btn-warning" routerLink="/courses/{{course.id}}/edit">Редактирай</a>
     </div>
   </div>
 </div>

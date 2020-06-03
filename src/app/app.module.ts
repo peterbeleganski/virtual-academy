@@ -12,6 +12,7 @@ import { CoursesListComponent } from './courses-list/courses-list.component';
 import { FavouriteCoursesComponent } from './favourite-courses/favourite-courses.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { CourseCreateComponent } from './cource-create/course-create.component';
+import { CourseEditComponent } from './cource-edit/course-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CourseCreateComponent } from './cource-create/course-create.component';
     CoursesListComponent,
     FavouriteCoursesComponent,
     MyProfileComponent,
-    CourseCreateComponent
+    CourseCreateComponent,
+    CourseEditComponent
   ],
   imports: [
     BrowserModule,

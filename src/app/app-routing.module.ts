@@ -7,6 +7,7 @@ import {AuthGuard} from './auth/auth.guard';
 import {FavouriteCoursesComponent} from './favourite-courses/favourite-courses.component';
 import {MyProfileComponent} from './my-profile/my-profile.component';
 import {CourseCreateComponent} from './cource-create/course-create.component';
+import {CourseEditComponent} from './cource-edit/course-edit.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'courses', component: CoursesListComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: MyProfileComponent, canActivate: [AuthGuard] },
   { path: 'courses/create', component: CourseCreateComponent, canActivate: [AuthGuard] },
+  { path: 'courses/:id/edit', component: CourseEditComponent, canActivate: [AuthGuard] },
   { path: 'favourite-courses', component: FavouriteCoursesComponent, canActivate: [AuthGuard] }];
 
 @NgModule({

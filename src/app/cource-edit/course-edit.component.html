@@ -1,4 +1,4 @@
-<h2>Добави нов курс</h2>
+<h2>Редактирай курс</h2>
 <form>
   <div class="form-group">
     <label for="name">Име на курса</label>
@@ -13,5 +13,5 @@
     <input type="date" [(ngModel)]="course.publishDate" name="publishDate" class="form-control">
   </div>
 
-  <button class="btn btn-primary" (click)="add()">Добави</button>
+  <button class="btn btn-primary" (click)="edit(course.id)">Редактирай</button>
 </form>
