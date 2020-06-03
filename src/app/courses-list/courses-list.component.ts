@@ -39,4 +39,13 @@ export class CoursesListComponent implements OnInit {
     const res = await this.httpClient.put<UserModel>(`${Constants.API_URL}users/${user.id}`, user).toPromise();
     this.userService.setLoggedInUser(res);
   }
+
+  isAdmin() {
+    return this.userService.getLoggedInUser().isAdmin;
+  }
+
+  async deleteCourse(id: string) {
+    await this.httpClient.delete<CourseModel>(`${Constants.API_URL}courses/${id}`).toPromise();
+    await this.fetchCourses();
+  }
 }

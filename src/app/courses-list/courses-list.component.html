@@ -7,6 +7,9 @@
       <p>Рейтинг: {{course.rating}}</p>
       <button class="btn btn-sm btn-info" (click)="addToFavourites(course)">Добави в любими</button>
     </div>
+    <div class="card-footer" *ngIf="isAdmin()" >
+      <button class="btn btn-sm btn-danger" (click)="deleteCourse(course.id)">Изтрий</button>
+    </div>
   </div>
 </div>
 
