@@ -10,6 +10,8 @@ import {FormsModule} from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { FavouriteCoursesComponent } from './favourite-courses/favourite-courses.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
+import { CourseCreateComponent } from './cource-create/course-create.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FavouriteCoursesComponent } from './favourite-courses/favourite-courses
     RegisterComponent,
     NavigationComponent,
     CoursesListComponent,
-    FavouriteCoursesComponent
+    FavouriteCoursesComponent,
+    MyProfileComponent,
+    CourseCreateComponent
   ],
   imports: [
     BrowserModule,

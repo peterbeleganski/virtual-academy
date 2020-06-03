@@ -1,0 +1,22 @@
+<h2>Редактирай профила си</h2>
+<h4 *ngIf="updated" class="text-success">Успешно редактирахте профила си</h4>
+<form>
+  <div class="form-group">
+    <label for="email">Имейл адрес</label>
+    <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Enter email" id="email" disabled>
+  </div>
+  <div class="form-group">
+    <label>Първо име</label>
+    <input type="text" [(ngModel)]="user.firstName" name="firstName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Фамилия</label>
+    <input type="text" [(ngModel)]="user.lastName" name="lastName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Парола</label>
+    <input type="password" [(ngModel)]="user.password"  name="password" class="form-control">
+  </div>
+
+  <button class="btn btn-primary" (click)="edit()">Редактирай</button>
+</form>
