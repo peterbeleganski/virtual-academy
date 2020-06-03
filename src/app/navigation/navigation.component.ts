@@ -18,6 +18,10 @@ export class NavigationComponent implements OnInit {
     return this.userService.getLoggedInUser();
   }
 
+  isAdmin() {
+    return this.userService.getLoggedInUser().isAdmin;
+  }
+
   logout() {
     localStorage.removeItem('user');
     this.router.navigate(['login']);
