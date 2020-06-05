@@ -1,0 +1,113 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "angular for beginners",
+      "publishDate": "10-10-2019",
+      "description": "Online course for people that want to learn angular",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "title": "React for beginner",
+      "publishDate": "2020-06-18",
+      "description": "Online course for people that want to learn react",
+      "rating": 3
+    },
+    {
+      "id": 3,
+      "title": "Java Advanced",
+      "publishDate": "02-10-2019",
+      "description": "Online course for people that want to learn Java",
+      "rating": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": "admin",
+      "firstName": "Peter",
+      "lastName": "Beleganski",
+      "isAdmin": true,
+      "isActive": true,
+      "courses": [
+        {
+          "id": 1,
+          "title": "angular for beginners",
+          "publishDate": "10-10-2019",
+          "description": "Online course for people that want to learn angular",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "email": "user@user.com",
+      "password": "user",
+      "firstName": "Georgi",
+      "lastName": "Georgiev",
+      "isAdmin": false,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "email": "test@test.com",
+      "password": "test",
+      "firstName": "Test",
+      "lastName": "Tes",
+      "isAdmin": true,
+      "isActive": true
+    },
+    {
+      "email": "pepibeleganski@gmail.com",
+      "password": "123",
+      "firstName": "Peter",
+      "lastName": "Beleganski",
+      "isActive": true,
+      "isAdmin": false,
+      "id": 4,
+      "courses": [
+        {
+          "id": 3,
+          "title": "Java Advanced",
+          "publishDate": "02-10-2019",
+          "description": "Online course for people that want to learn Java",
+          "rating": 5
+        },
+        {
+          "id": 1,
+          "title": "angular for beginners",
+          "publishDate": "10-10-2019",
+          "description": "Online course for people that want to learn angular",
+          "rating": 4
+        },
+        {
+          "id": 2,
+          "title": "React for beginners",
+          "publishDate": "05-10-2019",
+          "description": "Online course for people that want to learn react",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "email": "pepibeleganski2@gmail.com",
+      "password": "123",
+      "firstName": "Peter",
+      "lastName": "Beleganski",
+      "isActive": true,
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "email": "penko@penko.com",
+      "password": "123",
+      "firstName": "Penko",
+      "lastName": "dsada",
+      "isActive": true,
+      "isAdmin": false,
+      "id": 6
+    }
+  ]
+}

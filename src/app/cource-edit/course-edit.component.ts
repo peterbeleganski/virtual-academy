@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {HttpClient} from '@angular/common/http';
 import {Constants} from '../common/constants';
 import {CourseModel} from '../models/course.model';
-import {UserModel} from '../models/user.model';
 
 @Component({
   selector: 'app-course-edit',
